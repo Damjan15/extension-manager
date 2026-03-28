@@ -8,7 +8,7 @@ export const getExtensions = async () => {
   return res.json();
 };
 
-export const toggleExtensions = async (id, isActive) => {
+export const toggleExtension = async (id, isActive) => {
   const res = await fetch(`${BASE_URL}/${id}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
@@ -20,7 +20,7 @@ export const toggleExtensions = async (id, isActive) => {
   return res.json();
 };
 
-export const removeExtensions = async (id) => {
+export const removeExtension = async (id) => {
   const res = await fetch(`${BASE_URL}/${id}`, {
     method: "DELETE",
   });
