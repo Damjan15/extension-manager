@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* Theme Toggle Button */}
         <button
-          className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 cursor-pointer dark:bg-neutral-700"
+          className="w-10 h-10 flex items-center justify-center rounded-lg bg-neutral-100 cursor-pointer dark:bg-neutral-700 transition-colors duration-200 hover:bg-neutral-300 hover:dark:bg-neutral-600 focus:outline-none focus:ring-2 focus:ring-red-400"
           aria-label="Toggle Theme"
           onClick={toggleTheme}
         >
